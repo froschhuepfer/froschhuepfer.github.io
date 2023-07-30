@@ -11074,7 +11074,7 @@
 
 </head>
 
-<body oncontextmenu="return false;" class="bmain">
+<body class="bmain">
     <script src="rts.js.download" crossorigin="anonymous"></script>
     <script src="eae058b672.js.download" crossorigin="anonymous"></script>
     <script>
@@ -11133,7 +11133,7 @@
                 </div>
             </div>
         </nav>
-        <section oncontextmenu="return false;" class="main">
+        <section class="main">
             <div class="text-start containers">
                 <div class="Brand">
                     <!--<h1 class="Paragraph Hello">Hello World!</h1>-->
@@ -11176,6 +11176,15 @@
                 navigator.clipboard.write('_deinfreund')
             })
     </script>
+    
+
+    <script>
+        window.oncontextmenu = function () {
+            console.log("Right Click Disabled");
+            return false;
+        }
+    </script>
+
 
     <script>
         document.querySelectorAll('a[href*="000webhost"]').forEach(e => e.remove());
